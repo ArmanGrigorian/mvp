@@ -1,0 +1,30 @@
+{
+  "global": {
+    "artur_arakelyan": "Artur Arakelyan",
+    "charity_foundation": "fundação de caridade",
+    "delivery_of_humanitarian_cargo": "Entrega de carga humanitária a zonas de desastre e conflito.",
+    "delivery_water": "Entrega de água potável para áreas que estão enfrentando escassez.",
+    "donate": "doar",
+    "founder_and_president": "Fundador e Presidente",
+    "help": "ajuda",
+    "humanitarian_aid": "Ajuda Humanitária",
+    "humanitarian_bridge": "ponte humanitária",
+    "medicines_and_equipment_from_usa": "Medicamentos e Equipamentos dos EUA",
+    "project": "projeto",
+    "providing_medical_assistance_and_medicines": "Fornecendo assistência médica e fornecendo medicamentos aos hospitais.",
+    "slogan": "fazendo o bem ajudando aqueles que precisam",
+    "water_from_armenia": "Água Potável da Armênia",
+    "we_strive_for_transparency": "Nos esforçamos por transparência, eficiência e por fornecer apoio real àqueles que precisam."
+  },
+  "home": {
+    "we_join_forces": "Unimos forças para tornar o mundo melhor juntos, ajudando aqueles que precisam de esperança e apoio.",
+    "we_provides": "Nossa Fundação de Caridade fornece assistência humanitária àqueles que precisam, fornecendo água, medicamentos e bens essenciais para pessoas que se encontram em situações difíceis."
+  },
+  "nav": {
+    "about_the_foundation": "sobre a fundação",
+    "contact_us": "entre em contato conosco",
+    "home": "início",
+    "news": "notícias",
+    "projects": "projetos"
+  }
+}

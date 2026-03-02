@@ -1,0 +1,30 @@
+{
+  "global": {
+    "artur_arakelyan": "Artur Arakelyan",
+    "charity_foundation": "charity foundation",
+    "delivery_of_humanitarian_cargo": "Delivery of humanitarian cargo to disaster and conflict zones.",
+    "delivery_water": "Delivery of clean water to areas experiencing shortages.",
+    "donate": "donate",
+    "founder_and_president": "Founder and President",
+    "help": "help",
+    "humanitarian_aid": "Humanitarian Aid",
+    "humanitarian_bridge": "humanitarian bridge",
+    "medicines_and_equipment_from_usa": "Medicines and Equipment from the USA",
+    "project": "project",
+    "providing_medical_assistance_and_medicines": "Providing medical assistance and supplying medicines to hospitals.",
+    "slogan": "doing good by helping those who need it",
+    "water_from_armenia": "Drinking Water from Armenia",
+    "we_strive_for_transparency": "We strive for transparency, efficiency, and providing real support to those who need it."
+  },
+  "home": {
+    "we_join_forces": "We join forces to make the world better together by helping those who need hope and support.",
+    "we_provides": "Our Charity Foundation provides humanitarian assistance to those in need by supplying water, medicines, and essential goods to people who have found themselves in difficult situations."
+  },
+  "nav": {
+    "about_the_foundation": "about the foundation",
+    "contact_us": "contacts us",
+    "home": "home",
+    "news": "news",
+    "projects": "projects"
+  }
+}

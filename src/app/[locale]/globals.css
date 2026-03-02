@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+@theme {
+  --width-hd: 1920px;
+  --min-width-hd: 1920px;
+  --max-width-hd: 1920px;
+}
