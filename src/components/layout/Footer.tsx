@@ -5,7 +5,7 @@ export function Footer() {
 
   return (
     <footer className="bg-foundation-navy py-16 text-center text-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 lg:px-8">
         <p className="mx-auto mb-8 max-w-4xl text-lg leading-relaxed font-medium italic opacity-90 lg:text-xl">
           &quot;{t("we_strive_for_transparency")}&quot;
         </p>

@@ -1,9 +1,9 @@
 "use client";
 
-import { DataTable } from "@/components/admin";
 import { Hospital, Plus, Truck, Warehouse } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { DataTable } from "@/components/admin";
 
 export default function MedicalInventoryPage() {
   const t = useTranslations("admin.medical");

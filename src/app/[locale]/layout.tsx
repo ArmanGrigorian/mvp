@@ -1,8 +1,8 @@
-import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Geist } from "next/font/google";
 import { notFound } from "next/navigation";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
 import "./globals.css";
 
 const geistSans = Geist({

@@ -10,11 +10,11 @@ export * from "./home-page/SloganArticle";
 export * from "./home-page/Testimonials";
 export * from "./layout/Footer";
 export * from "./layout/Header";
-export * from "./layout/locale-switcher/LocaleSwitcher";
 export * from "./layout/Logo";
+export * from "./layout/locale-switcher/LocaleSwitcher";
 export * from "./layout/Navbar";
 export * from "./news/NewsSection";
 export * from "./projects/ProjectsSection";
 export * from "./shared/AuthModal";
+export * from "./shared/FloatingCallButton";
 export * from "./shared/Modal";
-

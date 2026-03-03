@@ -14,7 +14,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   const tGlobal = useTranslations("global");
   const tAuth = useTranslations("auth");
   const router = useRouter();
-  
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -29,8 +29,11 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
     try {
       // Mock successful login for demo
-      localStorage.setItem("user", JSON.stringify({ name: "Demo User", email: formData.email }));
-      
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ name: "Demo User", email: formData.email }),
+      );
+
       onClose();
       router.push("/admin");
     } catch (err: any) {
@@ -54,10 +57,11 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
       <form className="space-y-8" onSubmit={handleSubmit}>
         <div className="space-y-2">
-          <label className="text-foundation-navy/80 ml-1 block text-xs font-bold tracking-widest uppercase">
+          <label htmlFor="auth-email" className="text-foundation-navy/80 ml-1 block text-xs font-bold tracking-widest uppercase">
             {tAuth("email_address")}
           </label>
           <input
+            id="auth-email"
             type="email"
             required
             value={formData.email}
@@ -70,10 +74,11 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
         </div>
 
         <div className="space-y-2">
-          <label className="text-foundation-navy/80 ml-1 block text-xs font-bold tracking-widest uppercase">
+          <label htmlFor="auth-password" className="text-foundation-navy/80 ml-1 block text-xs font-bold tracking-widest uppercase">
             {tAuth("password")}
           </label>
           <input
+            id="auth-password"
             type="password"
             required
             value={formData.password}
@@ -90,7 +95,9 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
           disabled={loading}
           className="bg-foundation-navy hover:bg-foundation-navy/95 shadow-foundation-navy/20 relative group overflow-hidden w-full rounded-2xl py-5 text-center font-bold tracking-[0.2em] text-white uppercase shadow-xl transition-all hover:-translate-y-1 active:scale-[0.98] disabled:opacity-50"
         >
-          <span className="relative z-10">{loading ? tAuth("logging_in") : tGlobal("login")}</span>
+          <span className="relative z-10">
+            {loading ? tAuth("logging_in") : tGlobal("login")}
+          </span>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
         </button>
       </form>

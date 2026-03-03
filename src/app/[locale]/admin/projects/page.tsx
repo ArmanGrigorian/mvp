@@ -1,8 +1,8 @@
 "use client";
 
-import { DataTable } from "@/components/admin";
 import { Edit2, Plus, Trash2 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { DataTable } from "@/components/admin";
 
 const PROJECTS_DATA = [
   {

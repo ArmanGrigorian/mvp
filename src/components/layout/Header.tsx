@@ -4,8 +4,8 @@ import { LayoutDashboard } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { AuthModal } from "../shared/AuthModal";
-import { LocaleSwitcher } from "./locale-switcher/LocaleSwitcher";
 import { Logo } from "./Logo";
+import { LocaleSwitcher } from "./locale-switcher/LocaleSwitcher";
 import { Navbar } from "./Navbar";
 
 export function Header() {
@@ -65,7 +65,7 @@ export function Header() {
       >
         <div className="flex flex-col items-center gap-8 pt-12">
           <Navbar onItemClick={() => setIsMenuOpen(false)} />
-          <div className="flex flex-col items-center gap-6 pt-6">
+          <div className="flex flex-col items-center gap-6">
             <button
               className="bg-foundation-gold flex transform cursor-pointer items-center gap-2 rounded-lg px-12 py-3 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all active:scale-95"
               onClick={() => {
@@ -81,9 +81,9 @@ export function Header() {
         </div>
       </div>
 
-      <AuthModal 
-        isOpen={isAuthModalOpen} 
-        onClose={() => setIsAuthModalOpen(false)} 
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
       />
     </header>
   );

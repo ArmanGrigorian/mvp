@@ -1,8 +1,8 @@
 "use client";
 
-import { Link, useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { Link, useRouter } from "@/i18n/navigation";
 
 export default function LoginPage() {
   const tGlobal = useTranslations("global");
@@ -22,7 +22,10 @@ export default function LoginPage() {
 
     try {
       // Mock successful login for demo
-      localStorage.setItem("user", JSON.stringify({ name: "Demo User", email: formData.email }));
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ name: "Demo User", email: formData.email }),
+      );
       router.push("/dashboard");
     } catch (err: any) {
       setError("An unexpected error occurred");
@@ -42,7 +45,9 @@ export default function LoginPage() {
           <h1 className="text-foundation-navy text-4xl font-extrabold tracking-tight uppercase">
             {tGlobal("login")}
           </h1>
-          <p className="mt-3 text-gray-400 font-medium">{tAuth("welcome_back")}</p>
+          <p className="mt-3 text-gray-400 font-medium">
+            {tAuth("welcome_back")}
+          </p>
         </div>
 
         {error && (
@@ -89,7 +94,9 @@ export default function LoginPage() {
             disabled={loading}
             className="bg-foundation-navy hover:bg-foundation-navy/95 shadow-foundation-navy/20 relative group overflow-hidden w-full rounded-2xl py-5 text-center font-bold tracking-[0.2em] text-white uppercase shadow-xl transition-all hover:-translate-y-1 active:scale-[0.98] disabled:opacity-50"
           >
-            <span className="relative z-10">{loading ? tAuth("logging_in") : tGlobal("login")}</span>
+            <span className="relative z-10">
+              {loading ? tAuth("logging_in") : tGlobal("login")}
+            </span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
           </button>
         </form>

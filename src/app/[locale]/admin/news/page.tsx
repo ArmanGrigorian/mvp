@@ -1,7 +1,7 @@
 "use client";
 
-import { DataTable } from "@/components/admin";
 import { Edit2, Eye, Plus, Trash2 } from "lucide-react";
+import { DataTable } from "@/components/admin";
 
 const NEWS_DATA = [
   {

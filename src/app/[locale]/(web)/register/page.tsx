@@ -1,8 +1,8 @@
 "use client";
 
-import { Link, useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { Link, useRouter } from "@/i18n/navigation";
 
 export default function RegisterPage() {
   const tGlobal = useTranslations("global");
@@ -50,7 +50,9 @@ export default function RegisterPage() {
           <h1 className="text-foundation-navy text-4xl font-extrabold tracking-tight uppercase">
             {tGlobal("register")}
           </h1>
-          <p className="mt-3 text-gray-400 font-medium">{tAuth("join_mission")}</p>
+          <p className="mt-3 text-gray-400 font-medium">
+            {tAuth("join_mission")}
+          </p>
         </div>
 
         {error && (
@@ -113,7 +115,9 @@ export default function RegisterPage() {
             disabled={loading}
             className="bg-foundation-navy hover:bg-foundation-navy/95 shadow-foundation-navy/20 relative group overflow-hidden w-full rounded-2xl py-5 text-center font-bold tracking-[0.2em] text-white uppercase shadow-xl transition-all hover:-translate-y-1 active:scale-[0.98] disabled:opacity-50"
           >
-            <span className="relative z-10">{loading ? tAuth("registering") : tGlobal("register")}</span>
+            <span className="relative z-10">
+              {loading ? tAuth("registering") : tGlobal("register")}
+            </span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
           </button>
         </form>

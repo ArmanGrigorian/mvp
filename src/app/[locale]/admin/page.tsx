@@ -1,6 +1,5 @@
 "use client";
 
-import { SimpleLineChart, StatCard } from "@/components/admin";
 import {
   AlertTriangle,
   Check,
@@ -11,6 +10,7 @@ import {
   Users,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { SimpleLineChart, StatCard } from "@/components/admin";
 
 export default function AdminDashboard() {
   const t = useTranslations("admin.dashboard");

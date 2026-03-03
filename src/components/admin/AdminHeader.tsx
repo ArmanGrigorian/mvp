@@ -1,8 +1,8 @@
 "use client";
 
-import { LocaleSwitcher } from "@/components";
 import { Bell, Menu, Search, User } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { LocaleSwitcher } from "@/components";
 
 interface AdminHeaderProps {
   onMenuClick: () => void;

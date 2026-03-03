@@ -34,19 +34,23 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
     <>
       {/* Overlay for mobile */}
       <div
-        className={`fixed inset-0 z-40 bg-black/50 transition-opacity lg:hidden ${
+        className={`fixed inset-0 z-40 bg-foundation-navy/40 backdrop-blur-md transition-opacity duration-300 lg:hidden ${
           isOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={onClose}
       />
 
       <aside
-        className={`bg-foundation-navy fixed top-0 left-0 z-50 flex h-screen w-64 flex-col text-white transition-transform lg:translate-x-0 ${
+        className={`bg-foundation-navy fixed top-0 left-0 z-50 flex h-screen w-64 flex-col text-white transition-transform duration-300 ease-in-out border-r border-white/5 lg:translate-x-0 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="border-b border-white/10 p-6">
-          <Link href="/" className="group flex items-center gap-2" onClick={onClose}>
+          <Link
+            href="/"
+            className="group flex items-center gap-2"
+            onClick={onClose}
+          >
             <div className="bg-foundation-gold flex h-8 w-8 items-center justify-center rounded font-bold text-white transition-transform group-hover:scale-110">
               HB
             </div>
