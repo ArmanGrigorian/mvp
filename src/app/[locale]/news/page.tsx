@@ -1,3 +1,9 @@
+import { NewsSection } from "@/components";
+
 export default function NewsPage() {
-  return <main></main>;
+  return (
+    <main>
+      <NewsSection />
+    </main>
+  );
 }

@@ -150,5 +150,26 @@
       "phone": "Phone",
       "email": "Email"
     }
+  },
+  "testimonials": {
+    "title": "Voice of Our Community",
+    "subtitle": "Stories of hope and change from those we serve and those who serve with us.",
+    "items": {
+      "1": {
+        "text": "Humanitarian Bridge provided my community with clean water when we were in desperate need. Their quick response saved lives.",
+        "author": "Maria S.",
+        "role": "Village Representative"
+      },
+      "2": {
+        "text": "The medical equipment we received has doubled our clinic's capacity. We are now able to perform life-saving surgeries locally.",
+        "author": "Dr. Karen V.",
+        "role": "Chief Surgeon"
+      },
+      "3": {
+        "text": "Being a volunteer for this foundation has been the most fulfilling experience of my life. The impact is real and visible.",
+        "author": "James L.",
+        "role": "Field Volunteer"
+      }
+    }
   }
 }

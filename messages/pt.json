@@ -74,5 +74,74 @@
         "success_msg": "Requisição enviada com sucesso!"
       }
     }
+  },
+  "projects": {
+    "title": "Nossos Projetos de Impacto",
+    "subtitle": "Descubra como estamos construindo pontes de esperança em todo o mundo.",
+    "view_details": "Ver Detalhes",
+    "budget_goal": "Meta de Orçamento",
+    "funded": "Financiado",
+    "learn_more": "Saiba Mais"
+  },
+  "news": {
+    "title": "Últimas Notícias e Atualizações",
+    "subtitle": "Mantenha-se informado sobre nossas últimas missões e relatórios de campo.",
+    "read_more": "Leia Mais",
+    "featured": "História em Destaque"
+  },
+  "about": {
+    "title": "Sobre a Fundação",
+    "subtitle": "Conectando corações e recursos àqueles que precisam.",
+    "mission": {
+      "title": "Nossa Missão",
+      "desc": "Fornecer ajuda humanitária rápida, eficiente e transparente para regiões atingidas por desastres e carentes em todo o mundo."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "desc": "Um mundo onde as fronteiras geográficas não limitem a entrega de recursos vitais e esperança."
+    },
+    "team": {
+      "title": "Conheça Nossa Equipe",
+      "subtitle": "As pessoas dedicadas por trás da Ponte Humanitária."
+    }
+  },
+  "contact": {
+    "title": "Contate-nos",
+    "subtitle": "Tem dúvidas ou quer colaborar? Entre em contato conosco.",
+    "form": {
+      "name": "Nome Completo",
+      "email": "Endereço de E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "success": "Sua mensagem foi enviada. Entraremos em contato em breve!"
+    },
+    "info": {
+      "title": "Entre em Contato",
+      "address": "Endereço",
+      "phone": "Telefone",
+      "email": "E-mail"
+    }
+  },
+  "testimonials": {
+    "title": "A Voz da Nossa Comunidade",
+    "subtitle": "Histórias de esperança e mudança daqueles a quem servimos e daqueles que servem conosco.",
+    "items": {
+      "1": {
+        "text": "A Ponte Humanitária forneceu água potável à minha comunidade quando estávamos em necessidade desesperada. Sua resposta rápida salvou vidas.",
+        "author": "Maria S.",
+        "role": "Representante da Vila"
+      },
+      "2": {
+        "text": "O equipamento médico que recebemos dobrou a capacidade da nossa clínica. Agora podemos realizar cirurgias vitais localmente.",
+        "author": "Dra. Karen V.",
+        "role": "Cirurgiã Chefe"
+      },
+      "3": {
+        "text": "Ser voluntário nesta fundação tem sido a experiência mais gratificante da minha vida. O impacto é real e visível.",
+        "author": "James L.",
+        "role": "Voluntário de Campo"
+      }
+    }
   }
 }

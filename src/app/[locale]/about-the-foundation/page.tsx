@@ -1,3 +1,9 @@
+import { AboutSection } from "@/components";
+
 export default function AboutTheFoundationPage() {
-  return <main></main>;
+  return (
+    <main>
+      <AboutSection />
+    </main>
+  );
 }
