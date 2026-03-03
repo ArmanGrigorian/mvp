@@ -59,11 +59,11 @@ export function Header() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed inset-0 z-40 bg-white/95 backdrop-blur-lg transition-transform duration-300 lg:hidden ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
-        style={{ top: "80px" }}
+        className={`fixed inset-0 z-40 bg-white transition-transform duration-300 lg:hidden ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+        style={{ top: "80px", height: "calc(100vh - 80px)" }}
       >
         <div className="flex flex-col items-center gap-8 pt-12">
-          <Navbar />
+          <Navbar onItemClick={() => setIsMenuOpen(false)} />
           <div className="flex flex-col items-center gap-6 pt-6">
             <Link
               href="/admin"
