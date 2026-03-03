@@ -1,11 +1,10 @@
-import { Hgroup } from "@/components";
+import { Hero, ServiceCards } from "@/components";
 
 export default function HomePage() {
   return (
-    <main>
-      <header>
-        <Hgroup />
-      </header>
-    </main>
+    <div className="flex flex-col">
+      <Hero />
+      <ServiceCards />
+    </div>
   );
 }

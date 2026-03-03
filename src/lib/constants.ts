@@ -1,4 +1,9 @@
-export const NAVBAR_LINKS = [
+export interface NavLink {
+  href: string;
+  label: string;
+}
+
+export const NAVBAR_LINKS: NavLink[] = [
   {
     href: "/",
     label: "home",
@@ -19,4 +24,4 @@ export const NAVBAR_LINKS = [
     href: "/contact-us",
     label: "contact_us",
   },
-]
+];

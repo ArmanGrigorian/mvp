@@ -1,5 +1,8 @@
 {
   "global": {
+    "admin": "admin",
+    "charity": "Caridade",
+    "foundation": "Fundação",
     "artur_arakelyan": "Artur Arakelyan",
     "charity_foundation": "fundação de caridade",
     "delivery_of_humanitarian_cargo": "Entrega de carga humanitária a zonas de desastre e conflito.",
@@ -26,5 +29,50 @@
     "home": "início",
     "news": "notícias",
     "projects": "projetos"
+  },
+  "admin": {
+    "nav": {
+      "medical": "Inventário Médico"
+    },
+    "medical": {
+      "title": "Inventário Médico",
+      "subtitle": "Monitorar necessidades da clínica, níveis de estoque e carga em trânsito.",
+      "clinic_needs": {
+        "title": "Necessidades das Clínicas",
+        "clinic": "Clínica",
+        "medicine": "Medicamento Necessário",
+        "quantity": "Quantidade",
+        "priority": "Prioridade"
+      },
+      "storage": {
+        "title": "Disponibilidade de Armazenamento",
+        "location": "Localização",
+        "medicine": "Medicamento",
+        "available": "Disponível",
+        "expiry": "Data de Validade"
+      },
+      "transit": {
+        "title": "Em Trânsito",
+        "origin": "Origem",
+        "destination": "Destino",
+        "medicine": "Medicamento",
+        "quantity": "Quantidade",
+        "eta": "ETA"
+      },
+      "form": {
+        "title": "Adicionar Nova Requisição de Medicamento",
+        "clinic_name": "Nome da Clínica",
+        "select_clinic": "Selecione uma clínica",
+        "medicine_name": "Nome do Medicamento",
+        "medicine_placeholder": "ex: Insulina, Amoxicilina",
+        "quantity": "Quantidade",
+        "priority": "Prioridade",
+        "priority_normal": "Normal",
+        "priority_high": "Alta",
+        "priority_urgent": "Urgente",
+        "submit": "Enviar Requisição",
+        "success_msg": "Requisição enviada com sucesso!"
+      }
+    }
   }
 }

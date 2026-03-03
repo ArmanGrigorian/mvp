@@ -1,3 +1,12 @@
-export { default as Hgroup } from "./home-page/Hgroup";
-export { default as LocaleSwitcher } from "./layout/locale-switcher/LocaleSwitcher";
-export { default as Navbar } from "./layout/navbar/Navbar";
+export * from "./home-page/BackgroundImage";
+export * from "./home-page/FloatingInfoCard";
+export * from "./home-page/Hero";
+export * from "./home-page/Hgroup";
+export * from "./home-page/PresidentCard";
+export * from "./home-page/ServiceCards";
+export * from "./home-page/SloganArticle";
+export * from "./layout/Footer";
+export * from "./layout/Header";
+export * from "./layout/Logo";
+export * from "./layout/locale-switcher/LocaleSwitcher";
+export * from "./layout/Navbar";

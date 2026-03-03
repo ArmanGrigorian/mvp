@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export default function Hgroup() {
+export function Hgroup() {
   const t = useTranslations("global");
   return (
     <hgroup>

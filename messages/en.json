@@ -1,5 +1,8 @@
 {
   "global": {
+    "admin": "admin",
+    "charity": "Charity",
+    "foundation": "Foundation",
     "artur_arakelyan": "Artur Arakelyan",
     "charity_foundation": "charity foundation",
     "delivery_of_humanitarian_cargo": "Delivery of humanitarian cargo to disaster and conflict zones.",
@@ -26,5 +29,126 @@
     "home": "home",
     "news": "news",
     "projects": "projects"
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Dashboard Overview",
+      "welcome_back": "Welcome back to the command center.",
+      "stats": {
+        "total_projects": "Active Projects",
+        "volunteers": "Total Volunteers",
+        "news_articles": "News Articles",
+        "donations": "Recent Donations"
+      }
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "projects": "Projects",
+      "news": "News & Blog",
+      "users": "Team Members",
+      "medical": "Medical Inventory",
+      "settings": "Settings",
+      "logout": "Sign Out"
+    },
+    "header": {
+      "search_placeholder": "Search for projects, news, or messages..."
+    },
+    "projects": {
+      "title": "Projects Management",
+      "subtitle": "Create and manage your foundation's impact projects."
+    },
+    "news": {
+      "title": "News & Articles",
+      "subtitle": "Keep your supporters updated with the latest foundation news."
+    },
+    "medical": {
+      "title": "Medical Inventory",
+      "subtitle": "Monitor clinic needs, storage levels, and cargo in transit.",
+      "nav": "Medical Inventory",
+      "clinic_needs": {
+        "title": "Clinics Needs",
+        "clinic": "Clinic",
+        "medicine": "Required Medicine",
+        "quantity": "Quantity",
+        "priority": "Priority"
+      },
+      "storage": {
+        "title": "Storage Availability",
+        "location": "Location",
+        "medicine": "Medicine",
+        "available": "Available",
+        "expiry": "Expiry Date"
+      },
+      "transit": {
+        "title": "In Transit",
+        "origin": "Origin",
+        "destination": "Destination",
+        "medicine": "Medicine",
+        "quantity": "Quantity",
+        "eta": "ETA"
+      },
+      "form": {
+        "title": "Add New Medicine Request",
+        "clinic_name": "Clinic Name",
+        "select_clinic": "Select a clinic",
+        "medicine_name": "Medicine Name",
+        "medicine_placeholder": "e.g., Insulin, Amoxicillin",
+        "quantity": "Quantity",
+        "priority": "Priority",
+        "priority_normal": "Normal",
+        "priority_high": "High",
+        "priority_urgent": "Urgent",
+        "submit": "Submit Request",
+        "success_msg": "Request submitted successfully!"
+      }
+    }
+  },
+  "projects": {
+    "title": "Our Impact Projects",
+    "subtitle": "Discover how we are building bridges of hope across the globe.",
+    "view_details": "View Details",
+    "budget_goal": "Budget Goal",
+    "funded": "Funded",
+    "learn_more": "Learn More"
+  },
+  "news": {
+    "title": "Latest News & Updates",
+    "subtitle": "Stay informed about our latest missions and field reports.",
+    "read_more": "Read More",
+    "featured": "Featured Story"
+  },
+  "about": {
+    "title": "About the Foundation",
+    "subtitle": "Connecting hearts and resources to those in need.",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To provide rapid, efficient, and transparent humanitarian aid to disaster-stricken and underserved regions worldwide."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "A world where geographical boundaries do not limit the delivery of life-saving resources and hope."
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "The dedicated people behind Humanitarian Bridge."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or want to collaborate? Reach out to us.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Your message has been sent. We will get back to you soon!"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
   }
 }
