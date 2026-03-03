@@ -13,7 +13,7 @@ export function SloganArticle() {
       </p>
       <button
         type="button"
-        className="bg-foundation-gold hover:bg-foundation-gold/90 transform rounded px-12 py-4 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all hover:scale-105 active:scale-95"
+        className="bg-foundation-gold hover:bg-foundation-gold/90 transform rounded-lg px-12 py-4 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all hover:scale-105 active:scale-95"
       >
         {t("global.help")}
       </button>

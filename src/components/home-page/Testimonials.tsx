@@ -19,11 +19,11 @@ export function Testimonials() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+                <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
                     {testimonialIds.map((id) => (
                         <article
                             key={id}
-                            className="relative flex flex-col rounded-3xl bg-foundation-light p-10 shadow-sm transition-all hover:shadow-md"
+                            className="relative flex flex-col rounded-foundation bg-foundation-light p-10 shadow-sm transition-all hover:shadow-foundation"
                         >
                             <div className="text-foundation-gold mb-6">
                                 <svg

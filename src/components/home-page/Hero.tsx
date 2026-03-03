@@ -7,12 +7,12 @@ export function Hero() {
   const t = useTranslations();
 
   return (
-    <header className="animate-fade-in relative flex min-h-[90vh] items-center overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-0">
+    <header className="animate-fade-in relative flex min-h-[90vh] items-center overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-16">
       <h1 className="sr-only">{t("global.humanitarian_bridge")}</h1>
 
       <BackgroundImage />
 
-      <div className="relative z-10 container mx-auto flex flex-col items-center justify-between gap-16 px-6 lg:flex-row lg:gap-12">
+      <div className="relative z-10 mx-auto flex max-w-(--width-hd) flex-col items-center justify-between gap-16 px-4 lg:flex-row lg:gap-12 lg:px-8">
         <div className="animate-slide-up opacity-0 [animation-delay:200ms]">
           <SloganArticle />
         </div>

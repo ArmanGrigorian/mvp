@@ -43,10 +43,10 @@ export function ServiceCards() {
   return (
     <section className="bg-foundation-light py-24">
       <div className="container mx-auto px-6">
-        <ul className="animate-slide-up grid grid-cols-1 gap-12 opacity-0 [animation-delay:600ms] md:grid-cols-3">
+        <ul className="animate-slide-up grid grid-cols-1 gap-12 opacity-0 [animation-delay:600ms] lg:grid-cols-3">
           {services.map((service) => (
             <li key={service.id}>
-              <article className="group transform rounded-3xl border border-gray-50 bg-white p-10 text-center shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl">
+              <article className="group transform rounded-foundation border border-gray-50 bg-white p-10 text-center shadow-foundation transition-all hover:-translate-y-2 hover:shadow-2xl">
                 <div className="mb-8 flex transform justify-center transition-transform group-hover:scale-110">
                   {service.icon}
                 </div>

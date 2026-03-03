@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --font-inter: "Inter", sans-serif;
+  --font-inter: "Inter", var(--font-geist-sans), sans-serif;
   --color-foundation-navy: #1b365d;
   --color-foundation-gold: #b08d57;
   --color-foundation-light: #f8faff;
+
+  --radius-foundation: 1rem;
+  --shadow-foundation: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
   --width-hd: 1920px;
   --min-width-hd: 1920px;

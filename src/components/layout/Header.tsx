@@ -14,7 +14,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 h-20 border-b border-gray-100 bg-white/90 backdrop-blur-md">
-      <div className="container mx-auto flex h-full items-center justify-between gap-4 px-6">
+      <div className="mx-auto flex h-full max-w-(--width-hd) items-center justify-between gap-4 px-4 lg:px-8">
         {/* Left: Logo */}
         <div className="shrink-0">
           <Logo />
@@ -29,7 +29,7 @@ export function Header() {
         <div className="hidden items-center gap-6 lg:flex">
           <Link
             href="/admin"
-            className="bg-foundation-gold hover:bg-foundation-gold/90 flex transform items-center gap-2 rounded px-8 py-2.5 text-sm font-bold tracking-wider text-white uppercase shadow-sm transition-all hover:scale-105 active:scale-95"
+            className="bg-foundation-gold hover:bg-foundation-gold/90 flex transform items-center gap-2 rounded-lg px-8 py-2.5 text-sm font-bold tracking-wider text-white uppercase shadow-sm transition-all hover:scale-105 active:scale-95"
           >
             <LayoutDashboard size={18} />
             {t("admin")}
@@ -67,7 +67,7 @@ export function Header() {
           <div className="flex flex-col items-center gap-6 pt-6">
             <Link
               href="/admin"
-              className="bg-foundation-gold flex transform items-center gap-2 rounded px-12 py-3 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all active:scale-95"
+              className="bg-foundation-gold flex transform items-center gap-2 rounded-lg px-12 py-3 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all active:scale-95"
               onClick={() => setIsMenuOpen(false)}
             >
               <LayoutDashboard size={20} />

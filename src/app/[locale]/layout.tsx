@@ -1,9 +1,8 @@
+import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Geist } from "next/font/google";
 import { notFound } from "next/navigation";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { Footer, Header } from "@/components";
-import { routing } from "@/i18n/routing";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,9 +39,7 @@ export default async function RootLayout({
           <div
             className={`${geistSans.variable} flex min-h-screen flex-col antialiased`}
           >
-            <Header />
-            <main className="grow">{children}</main>
-            <Footer />
+            {children}
           </div>
         </NextIntlClientProvider>
       </body>

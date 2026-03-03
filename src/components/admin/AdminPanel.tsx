@@ -64,7 +64,7 @@ export default function AdminPanel() {
   }
 
   return (
-    <div className="container mx-auto space-y-12 px-6 py-24">
+    <div className="space-y-8">
       <div>
         <h1 className="text-foundation-navy mb-6 text-3xl font-bold">
           {tAdmin("dashboard_title")}

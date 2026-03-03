@@ -1,5 +1,6 @@
 "use client";
 
+import { Link, usePathname } from "@/i18n/navigation";
 import {
   FileText,
   FolderKanban,
@@ -10,7 +11,6 @@ import {
   Users,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
 
 const ADMIN_NAV_LINKS = [
   { href: "/admin", label: "dashboard", icon: LayoutDashboard },
@@ -21,63 +21,83 @@ const ADMIN_NAV_LINKS = [
   { href: "/admin/settings", label: "settings", icon: Settings },
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const pathname = usePathname();
   const t = useTranslations("admin");
 
   return (
-    <aside className="bg-foundation-navy fixed top-0 left-0 z-50 flex h-screen w-64 flex-col text-white">
-      <div className="border-b border-white/10 p-6">
-        <Link href="/" className="group flex items-center gap-2">
-          <div className="bg-foundation-gold flex h-8 w-8 items-center justify-center rounded font-bold text-white transition-transform group-hover:scale-110">
-            HB
-          </div>
-          <span className="text-sm font-bold tracking-wider uppercase">
-            Admin Panel
-          </span>
-        </Link>
-      </div>
+    <>
+      {/* Overlay for mobile */}
+      <div
+        className={`fixed inset-0 z-40 bg-black/50 transition-opacity lg:hidden ${
+          isOpen ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+        onClick={onClose}
+      />
 
-      <nav className="flex-1 space-y-2 px-4 py-6">
-        {ADMIN_NAV_LINKS.map((link) => {
-          const Icon = link.icon;
-          const isActive =
-            pathname === link.href ||
-            (link.href !== "/admin" && pathname.startsWith(link.href));
+      <aside
+        className={`bg-foundation-navy fixed top-0 left-0 z-50 flex h-screen w-64 flex-col text-white transition-transform lg:translate-x-0 ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="border-b border-white/10 p-6">
+          <Link href="/" className="group flex items-center gap-2" onClick={onClose}>
+            <div className="bg-foundation-gold flex h-8 w-8 items-center justify-center rounded font-bold text-white transition-transform group-hover:scale-110">
+              HB
+            </div>
+            <span className="text-sm font-bold tracking-wider uppercase">
+              Admin Panel
+            </span>
+          </Link>
+        </div>
 
-          return (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`group flex items-center gap-3 rounded-xl px-4 py-3 transition-all duration-200 ${
-                isActive
-                  ? "bg-foundation-gold shadow-foundation-gold/20 text-white shadow-lg"
-                  : "text-white/70 hover:bg-white/5 hover:text-white"
-              }`}
-            >
-              <Icon
-                size={20}
-                className={
-                  isActive ? "text-white" : "group-hover:text-foundation-gold"
-                }
-              />
-              <span className="text-sm font-medium">
-                {t(`nav.${link.label}`)}
-              </span>
-            </Link>
-          );
-        })}
-      </nav>
+        <nav className="flex-1 space-y-2 px-4 py-6">
+          {ADMIN_NAV_LINKS.map((link) => {
+            const Icon = link.icon;
+            const isActive =
+              pathname === link.href ||
+              (link.href !== "/admin" && pathname.startsWith(link.href));
 
-      <div className="mt-auto border-t border-white/10 p-4">
-        <button
-          type="button"
-          className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-white/60 transition-all hover:bg-white/5 hover:text-white"
-        >
-          <LogOut size={20} />
-          <span className="text-sm font-medium">{t("nav.logout")}</span>
-        </button>
-      </div>
-    </aside>
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={onClose}
+                className={`group flex items-center gap-3 rounded-xl px-4 py-3 transition-all duration-200 ${
+                  isActive
+                    ? "bg-foundation-gold shadow-foundation-gold/20 text-white shadow-lg"
+                    : "text-white/70 hover:bg-white/5 hover:text-white"
+                }`}
+              >
+                <Icon
+                  size={20}
+                  className={
+                    isActive ? "text-white" : "group-hover:text-foundation-gold"
+                  }
+                />
+                <span className="text-sm font-medium">
+                  {t(`nav.${link.label}`)}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="mt-auto border-t border-white/10 p-4">
+          <button
+            type="button"
+            className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-white/60 transition-all hover:bg-white/5 hover:text-white"
+          >
+            <LogOut size={20} />
+            <span className="text-sm font-medium">{t("nav.logout")}</span>
+          </button>
+        </div>
+      </aside>
+    </>
   );
 }

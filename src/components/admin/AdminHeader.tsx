@@ -1,24 +1,38 @@
 "use client";
 
-import { Bell, Search, User } from "lucide-react";
-import { useTranslations } from "next-intl";
 import { LocaleSwitcher } from "@/components";
+import { Bell, Menu, Search, User } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-export function AdminHeader() {
+interface AdminHeaderProps {
+  onMenuClick: () => void;
+}
+
+export function AdminHeader({ onMenuClick }: AdminHeaderProps) {
   const t = useTranslations("admin");
 
   return (
-    <header className="sticky top-0 right-0 left-0 z-40 flex h-20 items-center justify-between border-b border-gray-100 bg-white/70 px-8 backdrop-blur-xl transition-all duration-300">
-      <div className="group focus-within:border-foundation-gold/30 flex w-96 max-w-full items-center gap-4 rounded-2xl border border-gray-100 bg-gray-50/50 px-4 py-2.5 transition-all focus-within:bg-white focus-within:shadow-sm">
-        <Search
-          size={18}
-          className="group-focus-within:text-foundation-gold text-gray-400 transition-colors"
-        />
-        <input
-          type="text"
-          placeholder={t("header.search_placeholder")}
-          className="text-foundation-navy w-full border-none bg-transparent text-sm outline-none placeholder:text-gray-400"
-        />
+    <header className="sticky top-0 right-0 left-0 z-40 flex h-20 items-center justify-between border-b border-gray-100 bg-white/70 px-4 lg:px-8 backdrop-blur-xl transition-all duration-300">
+      <div className="flex items-center gap-4">
+        <button
+          type="button"
+          className="flex h-10 w-10 items-center justify-center rounded-xl text-gray-400 hover:bg-gray-50 lg:hidden"
+          onClick={onMenuClick}
+        >
+          <Menu size={24} />
+        </button>
+
+        <div className="group focus-within:border-foundation-gold/30 hidden w-96 max-w-full items-center gap-4 rounded-2xl border border-gray-100 bg-gray-50/50 px-4 py-2.5 transition-all focus-within:bg-white focus-within:shadow-sm sm:flex">
+          <Search
+            size={18}
+            className="group-focus-within:text-foundation-gold text-gray-400 transition-colors"
+          />
+          <input
+            type="text"
+            placeholder={t("header.search_placeholder")}
+            className="text-foundation-navy w-full border-none bg-transparent text-sm outline-none placeholder:text-gray-400"
+          />
+        </div>
       </div>
 
       <div className="flex items-center gap-6">
