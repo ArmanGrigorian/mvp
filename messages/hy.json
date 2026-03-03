@@ -15,9 +15,26 @@
     "medicines_and_equipment_from_usa": "ԱՄՆ-ից դեղամիջոցներ և սարքավորումներ",
     "project": "նախագիծ",
     "providing_medical_assistance_and_medicines": "Medical assistance and supplying medicines to hospitals.",
+    "register": "գրանցվել",
+    "login": "մուտք",
     "slogan": "բարեգործություն անել՝ օգնելով նրանց, ովքեր դրա կարիքն ունեն",
     "water_from_armenia": "Հայաստանից խմելու ջուր",
     "we_strive_for_transparency": "Մենք ձգտում ենք թափանցիկության, արդյունավետության և իրական աջակցություն տրամադրելու նրանց, ովքեր դրա կարիքն ունեն։"
+  },
+  "auth": {
+    "welcome_back": "Բարի գալուստ!",
+    "join_mission": "Միացեք մեր առաքելությանը՝ օգնելու նրանց, ովքեր դրա կարիքն ունեն:",
+    "email_address": "Էլ. Փոստի Հասցե",
+    "password": "Գաղտնաբառ",
+    "logging_in": "Մուտք...",
+    "registering": "Գրանցում...",
+    "dont_have_account": "Չունե՞ք հաշիվ:",
+    "registration": "Գրանցում",
+    "create_account": "Ստեղծեք Ձեր հաշիվը",
+    "full_name": "Ամբողջական Անուն",
+    "confirm_password": "Հաստատեք Գաղտնաբառը",
+    "creating_account": "Հաշվի ստեղծում...",
+    "already_have_account": "Արդեն ունե՞ք հաշիվ:"
   },
   "home": {
     "we_join_forces": "Մենք միավորում ենք ուժերը, որպեսզի միասին դարձնենք աշխարհը ավելի լավ, օգնելով նրանց, ովքեր կարիք ունեն հույսի և աջակցության։",

@@ -1,3 +1,5 @@
+export * from "./about/AboutSection";
+export * from "./contact/ContactForm";
 export * from "./home-page/BackgroundImage";
 export * from "./home-page/FloatingInfoCard";
 export * from "./home-page/Hero";
@@ -8,10 +10,11 @@ export * from "./home-page/SloganArticle";
 export * from "./home-page/Testimonials";
 export * from "./layout/Footer";
 export * from "./layout/Header";
-export * from "./layout/Logo";
 export * from "./layout/locale-switcher/LocaleSwitcher";
+export * from "./layout/Logo";
 export * from "./layout/Navbar";
-export * from "./projects/ProjectsSection";
 export * from "./news/NewsSection";
-export * from "./about/AboutSection";
-export * from "./contact/ContactForm";
+export * from "./projects/ProjectsSection";
+export * from "./shared/AuthModal";
+export * from "./shared/Modal";
+

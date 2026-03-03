@@ -15,9 +15,26 @@
     "medicines_and_equipment_from_usa": "Medicamentos e Equipamentos dos EUA",
     "project": "projeto",
     "providing_medical_assistance_and_medicines": "Fornecendo assistência médica e fornecendo medicamentos aos hospitais.",
+    "register": "registrar",
+    "login": "entrar",
     "slogan": "fazendo o bem ajudando aqueles que precisam",
     "water_from_armenia": "Água Potável da Armênia",
     "we_strive_for_transparency": "Nos esforçamos por transparência, eficiência e por fornecer apoio real àqueles que precisam."
+  },
+  "auth": {
+    "welcome_back": "Bem-vindo de volta!",
+    "join_mission": "Junte-se à nossa missão para ajudar quem precisa.",
+    "email_address": "Endereço de E-mail",
+    "password": "Senha",
+    "logging_in": "Entrando...",
+    "registering": "Registrando...",
+    "dont_have_account": "Não tem uma conta?",
+    "registration": "Registro",
+    "create_account": "Crie sua conta",
+    "full_name": "Nome Completo",
+    "confirm_password": "Confirmar Senha",
+    "creating_account": "Criando conta...",
+    "already_have_account": "Já tem uma conta?"
   },
   "home": {
     "we_join_forces": "Unimos forças para tornar o mundo melhor juntos, ajudando aqueles que precisam de esperança e apoio.",

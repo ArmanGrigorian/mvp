@@ -15,9 +15,26 @@
     "medicines_and_equipment_from_usa": "Medicines and Equipment from the USA",
     "project": "project",
     "providing_medical_assistance_and_medicines": "Providing medical assistance and supplying medicines to hospitals.",
+    "register": "register",
+    "login": "login",
     "slogan": "doing good by helping those who need it",
     "water_from_armenia": "Drinking Water from Armenia",
     "we_strive_for_transparency": "We strive for transparency, efficiency, and providing real support to those who need it."
+  },
+  "auth": {
+    "welcome_back": "Welcome back!",
+    "join_mission": "Join our mission to help those in need.",
+    "email_address": "Email Address",
+    "password": "Password",
+    "logging_in": "Logging in...",
+    "registering": "Registering...",
+    "dont_have_account": "Don't have an account?",
+    "registration": "Registration",
+    "create_account": "Create your account",
+    "full_name": "Full Name",
+    "confirm_password": "Confirm Password",
+    "creating_account": "Creating account...",
+    "already_have_account": "Already have an account?"
   },
   "home": {
     "we_join_forces": "We join forces to make the world better together by helping those who need hope and support.",

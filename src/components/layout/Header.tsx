@@ -1,9 +1,9 @@
 "use client";
 
-import { Link } from "@/i18n/navigation";
 import { LayoutDashboard } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { AuthModal } from "../shared/AuthModal";
 import { LocaleSwitcher } from "./locale-switcher/LocaleSwitcher";
 import { Logo } from "./Logo";
 import { Navbar } from "./Navbar";
@@ -11,6 +11,7 @@ import { Navbar } from "./Navbar";
 export function Header() {
   const t = useTranslations("global");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 h-20 border-b border-gray-100 bg-white/90 backdrop-blur-md">
@@ -27,13 +28,13 @@ export function Header() {
 
         {/* Right: Help Button & Locale Switcher (Desktop) */}
         <div className="hidden items-center gap-6 lg:flex">
-          <Link
-            href="/admin"
-            className="bg-foundation-gold hover:bg-foundation-gold/90 flex transform items-center gap-2 rounded-lg px-8 py-2.5 text-sm font-bold tracking-wider text-white uppercase shadow-sm transition-all hover:scale-105 active:scale-95"
+          <button
+            onClick={() => setIsAuthModalOpen(true)}
+            className="bg-foundation-gold hover:bg-foundation-gold/90 flex transform cursor-pointer items-center gap-2 rounded-lg px-8 py-2.5 text-sm font-bold tracking-wider text-white uppercase shadow-sm transition-all hover:scale-105 active:scale-95"
           >
             <LayoutDashboard size={18} />
             {t("admin")}
-          </Link>
+          </button>
           <LocaleSwitcher />
         </div>
 
@@ -65,18 +66,25 @@ export function Header() {
         <div className="flex flex-col items-center gap-8 pt-12">
           <Navbar onItemClick={() => setIsMenuOpen(false)} />
           <div className="flex flex-col items-center gap-6 pt-6">
-            <Link
-              href="/admin"
-              className="bg-foundation-gold flex transform items-center gap-2 rounded-lg px-12 py-3 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all active:scale-95"
-              onClick={() => setIsMenuOpen(false)}
+            <button
+              className="bg-foundation-gold flex transform cursor-pointer items-center gap-2 rounded-lg px-12 py-3 text-lg font-bold tracking-wider text-white uppercase shadow-lg transition-all active:scale-95"
+              onClick={() => {
+                setIsMenuOpen(false);
+                setIsAuthModalOpen(true);
+              }}
             >
               <LayoutDashboard size={20} />
               {t("admin")}
-            </Link>
+            </button>
             <LocaleSwitcher />
           </div>
         </div>
       </div>
+
+      <AuthModal 
+        isOpen={isAuthModalOpen} 
+        onClose={() => setIsAuthModalOpen(false)} 
+      />
     </header>
   );
 }

@@ -4,6 +4,7 @@
   --font-inter: "Inter", var(--font-geist-sans), sans-serif;
   --color-foundation-navy: #1b365d;
   --color-foundation-gold: #b08d57;
+  --color-foundation-gold-40: color-mix(in srgb, #b08d57 40%, transparent);
   --color-foundation-light: #f8faff;
 
   --radius-foundation: 1rem;
@@ -22,30 +23,36 @@
 
 @layer utilities {
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
+    animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .shadow-gold-glow {
+    box-shadow: 0 0 20px -5px var(--color-foundation-gold-40);
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
+    backdrop-filter: blur(0);
   }
   to {
     opacity: 1;
+    backdrop-filter: blur(8px);
   }
 }
 
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px) scale(0.98);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
